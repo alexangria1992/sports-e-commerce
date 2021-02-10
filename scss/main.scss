@@ -1,0 +1,39 @@
+// Importing Google Font
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap");
+// Importing Remix Icon
+@import url("https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css");
+
+// / ABSTRACTS
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+// BASE
+@import "base/normalize";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+// LAYOUT
+@import "layout/grid";
+@import "layout/headers";
+@import "layout/footer";
+
+// VENDORS
+@import "vendor/owl.carousel"; // carousel plugin
+
+// COMPONENTS
+@import "components/buttons";
+@import "components/cards";
+@import "components/carousel";
+@import "components/forms";
+@import "components/modal";
+
+// PAGES
+
+// Sections
+@import "pages/hero";
+@import "pages/details";
+@import "pages/category";
+@import "pages/products";
+@import "pages/promo";
+@import "pages/blog";

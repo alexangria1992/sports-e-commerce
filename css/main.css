@@ -1732,7 +1732,7 @@ h3 {
 
 .header {
   width: 100%;
-  background-color: #0a151f;
+  position: fixed;
   left: 0;
   top: 0;
   z-index: 100;
@@ -2032,6 +2032,100 @@ h3 {
   100% {
     -webkit-transform: scale(1);
             transform: scale(1);
+  }
+}
+
+.hero {
+  height: 100vh;
+}
+
+.hero__carousel {
+  height: 100%;
+  position: relative;
+}
+
+.hero__slide {
+  height: 100vh;
+  color: #f5f5f5;
+  padding: 12rem 0 15rem;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.hero h1 {
+  margin-bottom: 2rem;
+}
+
+.hero .athletic-sneakers {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 51, 145, 0.7)), to(rgba(0, 51, 145, 0.7))), url("../images/slide-bg-1.jpg");
+  background-image: linear-gradient(to right, rgba(0, 51, 145, 0.7), rgba(0, 51, 145, 0.7)), url("../images/slide-bg-1.jpg");
+}
+
+@media screen and (min-width: 34.5625em) {
+  .hero .athletic-sneakers {
+    padding-top: 15rem;
+  }
+}
+
+@media screen and (min-width: 56.3125em) {
+  .hero .athletic-sneakers {
+    padding-top: 10rem;
+  }
+}
+
+.hero .athletic-sneakers img {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 34.5625em) {
+  .hero .athletic-sneakers img {
+    width: 90%;
+  }
+}
+
+.hero .running-sneakers {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(129, 30, 45, 0.7)), to(rgba(129, 30, 45, 0.7))), url("../images/slide-bg-2.jpg");
+  background-image: linear-gradient(to right, rgba(129, 30, 45, 0.7), rgba(129, 30, 45, 0.7)), url("../images/slide-bg-2.jpg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .running-sneakers img {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 56.3125em) {
+  .hero .running-sneakers img {
+    width: 80%;
+  }
+}
+
+.hero .casual-sneakers {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(30, 30, 31, 0.7)), to(rgba(30, 30, 31, 0.7))), url("../images/slide-bg-3.jpg");
+  background-image: linear-gradient(to right, rgba(30, 30, 31, 0.7), rgba(30, 30, 31, 0.7)), url("../images/slide-bg-3.jpg");
+}
+
+.hero .casual-sneakers img {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 34.5625em) {
+  .hero .casual-sneakers img {
+    width: 95%;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,29 @@
+.button, 
+button[type="submit"]
+{
+    font-size: 1.6rem;
+    padding: $button-padding;
+    text-align: center;
+    border: 0;
+    border-radius: $border-radius;
+    text-transform: uppercase;
+    letter-spacing: $letter-spacing;
+    display: inline-flex;
+    @include justify-align-center;
+    cursor: pointer;
+    @include transition;
+
+    &.button--default 
+    {
+        color: $off-white-color; 
+        background-color: $accent-color;
+        border-bottom: 0.3rem solid $hover-accent-color;
+
+        &:hover 
+        {
+            border-radius: 0;
+            background-color: $hover-accent-color;
+        }
+
+    }
+}
